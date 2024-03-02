@@ -1,4 +1,5 @@
-Team:
-    * João Dantas
-    * Alexandre
-    * Gabriel Alves
+# Team
+
+* João Dantas
+* Alexandre
+* Gabriel Alves
