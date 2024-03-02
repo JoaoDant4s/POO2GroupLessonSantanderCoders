@@ -1,13 +1,10 @@
 public class Carro extends Veiculo {
     // atributos
-    private SistemaDeTransporte sistemaDeTransporte;
-
     // contrutor
     // metodos
 
-    public Carro(String modelo, Integer ano, SistemaDeTransporte sistemaDeTransporte) {
+    public Carro(String modelo, Integer ano) {
         super(modelo, ano);
-        this.sistemaDeTransporte = sistemaDeTransporte;
     }
 
     @Override

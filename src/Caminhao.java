@@ -1,9 +1,6 @@
-public class Caminhao extends Veiculo {
-    private SistemaDeTransporte sistemaDeTransporte;
-
-    public Caminhao(String modelo, Integer ano, SistemaDeTransporte sistemaDeTransporte) {
+public class Caminhao extends Veiculo implements SistemaDeTransporte {
+    public Caminhao(String modelo, Integer ano) {
         super(modelo, ano);
-        this.sistemaDeTransporte = sistemaDeTransporte;
     }
 
     @Override
@@ -14,5 +11,15 @@ public class Caminhao extends Veiculo {
     @Override
     public void frear(int velocidade) {
         System.out.println("Freando caminhao");
+    }
+
+    @Override
+    public void controleDeCarga(double peso, int distancia) {
+        System.out.println("peso, distancia");
+    }
+
+    @Override
+    public void calcularRota(java.lang.String[] pontosDeEntrega) {
+        System.out.println("calculando rota do caminhão");
     }
 }

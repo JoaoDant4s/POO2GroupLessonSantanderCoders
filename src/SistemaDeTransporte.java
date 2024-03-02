@@ -1,9 +1,6 @@
-public class SistemaDeTransporte {
-    public void controleDeCarga(double peso, int distancia) {
-        System.out.println("Controlando carga");
-    };
+public interface SistemaDeTransporte {
 
-    public void calcularRota(String[] pontosDeEntrega) {
-        System.out.println("Calculando rota");
-    };
+    void controleDeCarga(double peso, int distancia);
+
+    void calcularRota(String[] pontosDeEntrega);
 }
